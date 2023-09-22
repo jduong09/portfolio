@@ -1,0 +1,76 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* Header */
+header {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#list-important-links {
+  display: flex;
+  align-items: center;
+}
+
+#list-important-links > li {
+  margin-left: 1rem;
+}
+
+#list-important-links > li:first-child {
+  margin-left: 0;
+}
+
+#list-important-links > li > a {
+  display: flex;
+}
+
+#list-important-links > li > a > svg {
+  margin-right: .25rem;
+}
+
+/* Main */
+main {
+  padding: 0 2rem;
+}
+
+
+#section-introduction {
+  display: flex;
+  align-items: center;
+}
+
+#div-introduction, #div-selfie {
+  width: 50%;
+}
+
+#img-portrait {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+  width: 50%;
+}
+
+#img-water-your-subs {
+  width: 300px;
+  height: auto;
+  border: 2px solid black;
+}
