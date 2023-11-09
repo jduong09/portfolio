@@ -1,10 +1,23 @@
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: sans-serif, 'Times New Roman', Times, serif;
   font-size: 1rem;
 }
 
-h1, h2, h3 {
+h1, a {
   font-weight: 700;
+  color: #8259CB;
+}
+
+header h1, h2 {
+  font-size: 2rem;
+}
+
+main h1 {
+  font-size: 2.5rem;
+}
+
+#tech-stack > h3, .div-project-description > h3 {
+  font-size: 1.25rem;
 }
 
 /* Header */
@@ -15,21 +28,17 @@ header {
   justify-content: space-between;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 2rem;
-}
 
-#list-important-links {
+#list-important-links, #footer-list-important-links {
   display: flex;
   align-items: center;
 }
 
-#list-important-links > li {
+#list-important-links > li, #footer-list-important-links > li {
   margin-left: 1rem;
 }
 
-#list-important-links > li:first-child {
+#list-important-links > li:first-child, #footer-list-important-links > li:first-child {
   margin-left: 0;
 }
 
@@ -41,15 +50,27 @@ h1 {
   margin-right: .25rem;
 }
 
+#list-item-resume > a {
+  padding: .75rem 1.25rem;
+  border: 2px solid #8259CB;
+  border-radius: .5rem;
+}
+
 /* Main */
 main {
   padding: 0 2rem;
 }
 
+#introduction, #about-me, #projects {
+  margin-bottom: 2rem;
+}
 
-#section-introduction {
+/* Main#section-introduction */
+#introduction {
   display: flex;
   align-items: center;
+  background-color: hsla(262, 52%, 57%, .1);
+  padding: 1.5rem;
 }
 
 #div-introduction, #div-selfie {
@@ -63,14 +84,108 @@ main {
   margin: 0 auto;
 }
 
-h2 {
-  font-size: 2.5rem;
+#div-introduction > h1 {
+  margin-bottom: 1.5rem;
+}
+
+#div-introduction > div {
   margin-bottom: .5rem;
-  width: 50%;
+}
+
+#div-introduction > div, #about-me > div > div, .div-project-description > div {
+  line-height: 1.25rem;
+}
+
+#list-contact {
+  display: flex;
+  align-items: center;
+}
+
+#list-contact > li {
+  display: flex;
+  align-items: center;
+}
+
+#list-contact > li:first-child {
+  margin-right: 1rem;
+}
+
+#list-contact > li > svg {
+  margin-right: .5rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
 }
 
 #img-water-your-subs {
   width: 300px;
   height: auto;
   border: 2px solid black;
+}
+
+/* Main#about-me */
+#about-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-me > div {
+  width: 50%;
+}
+
+#about-me > div:last-child {
+  text-align: end;
+}
+
+#tech-stack > h3 {
+  margin-bottom: .5rem;
+}
+
+#tech-stack > ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+#tech-stack > ul > li:first-child {
+  margin-left: 0;
+}
+
+#tech-stack > ul > li {
+  margin-left: .5rem;
+}
+
+#projects > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#projects > ul > li {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: hsla(262, 52%, 57%, .1);
+}
+
+.div-project-description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-project-description > h3, .div-project-description > a {
+  margin-bottom: 1rem;
+}
+
+.div-project-description > a {
+  margin: 0 0 1rem auto;
+}
+
+.div-project-description > div {
+  margin-bottom: 1rem;
 }
