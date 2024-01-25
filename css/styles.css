@@ -28,10 +28,31 @@ header {
   justify-content: space-between;
 }
 
+nav {
+  position: relative;
+}
+
+#mobile-list-important-links {
+  padding: 1rem;
+  position: absolute;
+  top: 1.25rem;
+  right: 0;
+  text-align: end;
+  z-index: 10;
+  background-color: white;
+  border: 2px solid #8259CB;
+}
+
+#mobile-list-important-links > li {
+  margin-bottom: .75rem;
+}
+
+#mobile-list-important-links > li:last-of-type {
+  margin-bottom: 0;
+}
 
 #list-important-links, #footer-list-important-links {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 #list-important-links > li, #footer-list-important-links > li {
@@ -50,7 +71,7 @@ header {
   margin-right: .25rem;
 }
 
-#list-item-resume > a {
+#list-item-resume {
   padding: .75rem 1.25rem;
   border: 2px solid #8259CB;
   border-radius: .5rem;
@@ -68,13 +89,14 @@ main {
 /* Main#section-introduction */
 #introduction {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: hsla(262, 52%, 57%, .1);
   padding: 1.5rem;
 }
 
 #div-introduction, #div-selfie {
-  width: 50%;
+  width: 100%;
 }
 
 #img-portrait {
@@ -82,6 +104,10 @@ main {
   width: 200px;
   height: auto;
   margin: 0 auto;
+}
+
+#div-introduction {
+  margin-bottom: 2rem;
 }
 
 #div-introduction > h1 {
@@ -118,33 +144,25 @@ h2 {
   margin-bottom: 1rem;
 }
 
-#img-water-your-subs {
-  width: 300px;
-  height: auto;
-  border: 2px solid black;
-}
-
 /* Main#about-me */
 #about-me {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 #about-me > div {
-  width: 50%;
+  margin-bottom: 1rem;
 }
 
-#about-me > div:last-child {
-  text-align: end;
-}
 
 #tech-stack > h3 {
+  color: #8259CB;
   margin-bottom: .5rem;
 }
 
 #tech-stack > ul {
   display: flex;
-  justify-content: flex-end;
   margin-bottom: 1.5rem;
 }
 
@@ -164,7 +182,7 @@ h2 {
 }
 
 #projects > ul > li {
-  width: 49%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -175,17 +193,85 @@ h2 {
 
 .div-project-description {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
-.div-project-description > h3, .div-project-description > a {
-  margin-bottom: 1rem;
+.div-project-description > h3 {
+  margin-bottom: .5rem;
 }
 
 .div-project-description > a {
-  margin: 0 0 1rem auto;
+  margin-bottom: 1rem;
 }
 
 .div-project-description > div {
   margin-bottom: 1rem;
+}
+
+.img-project {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+}
+
+@media (min-width: 576px) {
+  #btn-hamburger, #btn-x, #mobile-list-important-links {
+    display: none;
+  }
+
+  #list-important-links, #footer-list-important-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  #introduction {
+    flex-direction: row;
+  }
+
+  #div-introduction {
+    margin-bottom: 0;
+  }
+
+  #div-introduction, #div-selfie {
+    width: 50%;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+@media (min-width: 767px) {
+  #about-me {
+    flex-direction: row;
+  }
+  
+  #about-me > div {
+    width: 50%;
+  }
+  
+  #about-me > div:last-child {
+    text-align: end;
+  }
+
+  #tech-stack > ul {
+    justify-content: flex-end;
+  }
+  
+  #projects > ul > li {
+    width: 48%;
+  }
+
+  .div-project-description {
+    flex-direction: row;
+  }
+
+  .div-project-description > a {
+    margin: 0 0 1rem auto;
+  }
+
+  .img-project {
+    width: 300px;
+  }
 }
