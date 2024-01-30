@@ -71,10 +71,20 @@ nav {
   margin-right: .25rem;
 }
 
-#list-item-resume {
+#list-important-links > li > a:hover > svg > path {
+  fill: #5969CB;
+}
+
+#list-item-resume > a {
   padding: .75rem 1.25rem;
   border: 2px solid #8259CB;
   border-radius: .5rem;
+}
+
+#list-item-resume > a:hover {
+  background-color: #5969CB;
+  border-color: #5969CB;
+  color: #FFFFFF;
 }
 
 /* Main */
