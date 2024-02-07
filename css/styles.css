@@ -165,6 +165,27 @@ h2 {
   margin-bottom: 1rem;
 }
 
+#link-email {
+  display: inline-flex;
+  padding: .75rem 1.25rem;
+  border: 2px solid #8259CB;
+  border-radius: .5rem;
+  align-items: center;
+}
+
+#link-email:hover {
+  background-color: #5969CB;
+  border-color: #5969CB;
+  color: #FFFFFF;
+}
+
+#link-email:hover > svg > path {
+  fill: #FFFFFF;
+}
+
+#link-email > svg {
+  margin-right: .5rem;
+}
 
 #tech-stack > h3 {
   color: #8259CB;
