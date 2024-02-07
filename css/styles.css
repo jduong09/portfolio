@@ -75,12 +75,6 @@ nav {
   fill: #5969CB;
 }
 
-#list-item-resume > a {
-  padding: .75rem 1.25rem;
-  border: 2px solid #8259CB;
-  border-radius: .5rem;
-}
-
 #list-item-resume > a:hover {
   background-color: #5969CB;
   border-color: #5969CB;
@@ -266,6 +260,12 @@ h2 {
 
   #div-introduction, #div-selfie {
     width: 50%;
+  }
+
+  #list-item-resume > a {
+    padding: .75rem 1.25rem;
+    border: 2px solid #8259CB;
+    border-radius: .5rem;
   }
 }
 
