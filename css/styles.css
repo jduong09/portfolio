@@ -240,6 +240,11 @@ h2 {
   border: 2px solid black;
 }
 
+#header-wip {
+  font-weight: 600;
+  color: #ff0000;
+}
+
 @media (min-width: 576px) {
   #btn-hamburger, #btn-x, #mobile-list-important-links {
     display: none;
